@@ -1,16 +1,20 @@
-# Student Data Analysis (SQL)
+# Student Data Cleaning Script (Python)
 
-This project contains MySQL queries to analyze educational survey data.
+This project contains a simple Python script to clean and normalize
+real-world educational survey data stored in CSV format.
 
-## What it does
-- Summarizes student distribution by semester
-- Analyzes motivation and future confidence trends
-- Calculates work-status distribution and percentages
-- Explores economic impact relationships
-- Identifies simple risk segments using CASE expressions
+## What the script does
+- Loads a raw CSV file
+- Standardizes column names
+- Removes empty rows and duplicates
+- Handles missing values
+- Converts numeric-like fields
+- Generates a clean dataset and a summary report automatically
 
-## Tech
-- MySQL (SQL)
+## Technologies
+- Python
+- pandas
 
-## Files
-- `queries.sql`: analysis queries
+## How to run
+```bash
+python clean_students.py
